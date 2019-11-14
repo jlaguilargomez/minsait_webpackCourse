@@ -1,16 +1,9 @@
+import numbersAndLetters from './script/numbers_and_letters';
+
 export function main(){
     // code goes here
-    console.log('Hello world')
-    setTimeout(() => console.log(2), 2000)
-    ;[1, 2, 3].forEach(x => console.log(x))
-
-    test()
+    let div = document.createElement('div');
+    document.body.appendChild(div);
+    div.innerHTML = numbersAndLetters; 
 }
 
-
-async function test(){
-    await new Promise((resolve, reject) => {
-        setTimeout(() => resolve(), 2000)
-    })
-
-}

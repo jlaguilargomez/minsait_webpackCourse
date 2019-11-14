@@ -9797,50 +9797,68 @@ Object(_main__WEBPACK_IMPORTED_MODULE_149__["main"])();
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "main", function() { return main; });
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+/* harmony import */ var _script_numbers_and_letters__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./script/numbers_and_letters */ "./src/js/script/numbers_and_letters.js");
 
 function main() {
   // code goes here
-  console.log('Hello world');
-  setTimeout(function () {
-    return console.log(2);
-  }, 2000);
-  [1, 2, 3].forEach(function (x) {
-    return console.log(x);
-  });
-  test();
+  var div = document.createElement('div');
+  document.body.appendChild(div);
+  div.innerHTML = _script_numbers_and_letters__WEBPACK_IMPORTED_MODULE_0__["default"];
 }
 
-function test() {
-  return _test.apply(this, arguments);
-}
+/***/ }),
 
-function _test() {
-  _test = _asyncToGenerator(
-  /*#__PURE__*/
-  regeneratorRuntime.mark(function _callee() {
-    return regeneratorRuntime.wrap(function _callee$(_context) {
-      while (1) {
-        switch (_context.prev = _context.next) {
-          case 0:
-            _context.next = 2;
-            return new Promise(function (resolve, reject) {
-              setTimeout(function () {
-                return resolve();
-              }, 2000);
-            });
+/***/ "./src/js/script/charts.js":
+/*!*********************************!*\
+  !*** ./src/js/script/charts.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-          case 2:
-          case "end":
-            return _context.stop();
-        }
-      }
-    }, _callee);
-  }));
-  return _test.apply(this, arguments);
-}
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var charts = ['a', 'd', 'c'];
+/* harmony default export */ __webpack_exports__["default"] = (charts);
+
+/***/ }),
+
+/***/ "./src/js/script/numbers.js":
+/*!**********************************!*\
+  !*** ./src/js/script/numbers.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var numbers = [1, 2, 3];
+/* harmony default export */ __webpack_exports__["default"] = (numbers);
+
+/***/ }),
+
+/***/ "./src/js/script/numbers_and_letters.js":
+/*!**********************************************!*\
+  !*** ./src/js/script/numbers_and_letters.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _charts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./charts */ "./src/js/script/charts.js");
+/* harmony import */ var _numbers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./numbers */ "./src/js/script/numbers.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+
+
+var numbersAndLetters = [].concat(_toConsumableArray(_numbers__WEBPACK_IMPORTED_MODULE_1__["default"]), _toConsumableArray(_charts__WEBPACK_IMPORTED_MODULE_0__["default"]));
+/* harmony default export */ __webpack_exports__["default"] = (numbersAndLetters);
 
 /***/ }),
 
