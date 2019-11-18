@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -366,52 +367,44 @@ textarea {
 }
 
 
+* {
+  box-sizing: border-box; }
+
 body {
-  background-color: #d6b5b5; }
+  background-color: #3a3a3a;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; }
 
-.rectangle {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  width: 150px;
-  height: 150px;
-  background-color: purple; }
-
-div {
-  color: blue;
-  font-weight: bold;
-  font-size: 30px; }
-  div--highlighted {
-    background-color: blue; }
-  div p {
-    color: greenyellow; }
-
-.container {
-  position: relative;
-  width: 400px;
-  height: 600px; }
-  .container p {
-    margin-top: 20px; }
-    .container p:hover {
-      color: teal; }
-  .container img {
-    margin-top: 20px; }
-
-.aside {
-  width: 30%; }
-  .aside__menu {
-    width: 100%; }
-    .aside__menu__li {
-      cursor: pointer; }
-      .aside__menu__li__icon {
-        width: 32px;
-        height: 32px; }
-      .aside__menu__li-text {
-        font-weight: 400; }
-      .aside__menu__li-activeText {
-        background-color: #f1f1f1; }
-    .aside__menu-header {
-      font-weight: 800; }
+.menu {
+  background-color: #161616;
+  margin: 100px;
+  width: 300px;
+  height: 420px; }
+  .menu__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0e0e0e;
+    height: 16%;
+    text-align: center;
+    color: #cfcfcf;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+    font-size: 1.4rem; }
+  .menu__element {
+    height: 14%;
+    border-top: 2px solid rgba(0, 0, 0, 0.288); }
+    .menu__element a {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white; }
+    .menu__element__img {
+      height: 40%;
+      margin: 20px; }
+    .menu__element__text {
+      text-decoration: none; }
 
 
 /*# sourceMappingURL=build.css.map*/

@@ -9797,56 +9797,23 @@ Object(_main__WEBPACK_IMPORTED_MODULE_149__["main"])();
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "main", function() { return main; });
-/* harmony import */ var _script_numbers_and_letters__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./script/numbers_and_letters */ "./src/js/script/numbers_and_letters.js");
+/* harmony import */ var _script_menuItems__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./script/menuItems */ "./src/js/script/menuItems.js");
 
 function main() {
-  // code goes here
-  var div = document.createElement('div');
-  document.body.appendChild(div);
-  div.innerHTML = _script_numbers_and_letters__WEBPACK_IMPORTED_MODULE_0__["default"];
+  console.log(_script_menuItems__WEBPACK_IMPORTED_MODULE_0__["default"]);
 }
 
 /***/ }),
 
-/***/ "./src/js/script/charts.js":
-/*!*********************************!*\
-  !*** ./src/js/script/charts.js ***!
-  \*********************************/
+/***/ "./src/js/script/menuItems.js":
+/*!************************************!*\
+  !*** ./src/js/script/menuItems.js ***!
+  \************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var charts = ['a', 'd', 'c'];
-/* harmony default export */ __webpack_exports__["default"] = (charts);
-
-/***/ }),
-
-/***/ "./src/js/script/numbers.js":
-/*!**********************************!*\
-  !*** ./src/js/script/numbers.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var numbers = [1, 2, 3];
-/* harmony default export */ __webpack_exports__["default"] = (numbers);
-
-/***/ }),
-
-/***/ "./src/js/script/numbers_and_letters.js":
-/*!**********************************************!*\
-  !*** ./src/js/script/numbers_and_letters.js ***!
-  \**********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _charts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./charts */ "./src/js/script/charts.js");
-/* harmony import */ var _numbers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./numbers */ "./src/js/script/numbers.js");
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
@@ -9855,10 +9822,11 @@ function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.
 
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
+// From DOM to JS
+var menuItems = _toConsumableArray(document.querySelectorAll('.menu__element'));
 
-
-var numbersAndLetters = [].concat(_toConsumableArray(_numbers__WEBPACK_IMPORTED_MODULE_1__["default"]), _toConsumableArray(_charts__WEBPACK_IMPORTED_MODULE_0__["default"]));
-/* harmony default export */ __webpack_exports__["default"] = (numbersAndLetters);
+console.log(menuItems);
+/* harmony default export */ __webpack_exports__["default"] = (menuItems);
 
 /***/ }),
 
